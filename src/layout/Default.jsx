@@ -3,7 +3,7 @@ import { Header, Footer } from "../components/common";
 export const DefaultLayout = ({ children }) => {
     return (
         <div className="flex flex-col h-screen">
-            <header className="shadow bg-black text-white">
+            <header className="shadow bg-blue-300">
                 <Header/>
             </header>
 
@@ -11,7 +11,7 @@ export const DefaultLayout = ({ children }) => {
                 {children}
             </main>
 
-            <footer className="border border-top bg-black text-white">
+            <footer className="border border-top bg-blue-300">
                 <Footer/>
             </footer>
         </div>
