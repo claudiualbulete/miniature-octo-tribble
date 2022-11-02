@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import { Button } from "../ui";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 export const Header = () => {
     return (
         <div className="container mx-auto p-4 flex items-center justify-between">
             <Link to="/" title="Go home">
-                <FontAwesomeIcon icon="fa-solid fa-coffee" size="md"/>
+                <FontAwesomeIcon icon={faCoffee} size="xl"/>
 
-                Hangman
+                <span className="ml-4">Hangman</span>
             </Link>
 
             <Link to="/account" title="Login">
